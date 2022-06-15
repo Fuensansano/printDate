@@ -1,9 +1,9 @@
 import java.time.LocalDate;
 
 public class PrintDate {
-    public void printCurrentDate() {
-        String line = Calendar.today().toString();
-        Printer.printLine(line);
+    public void printDate(Calendar date, Printer print) {
+        String line = date.randomDay().toString();
+        print.printLine(line);
     }
 
 }
